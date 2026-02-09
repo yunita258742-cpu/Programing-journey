@@ -1,0 +1,22 @@
+/* Styles for the external CSS file */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color:bisque;
+    margin: auto;
+    padding: auto;
+}
+h1 {
+    color:burlywood;
+    text-align:justify;
+    margin-top: 30px;
+}
+h2 {
+    color: blueviolet;
+    text-align: left;
+    margin-top: 30px;
+}
+p {
+    color:black;
+    line-height: 1.8;
+    padding: 0 25px;
+}
