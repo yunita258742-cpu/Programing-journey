@@ -1,0 +1,47 @@
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    float: left;
+    position: relative;
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 25px;
+    background: orange;
+    color: white;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background: red;
+}
+
+/* submenu */
+.submenu {
+    display: none;
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.submenu li a {
+    width: 120px;
+    background: orange;
+}
+
+/* tampilkan submenu saat mouse diarahkan */
+.menu li:hover .submenu {
+    display: block;
+}
+
+/* agar submenu ke bawah */
+.menu li ul li {
+    clear: both;
+    width: 100%;
+}
