@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nita Cosmetic</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+            }
+
+        body{
+            background:#fff5f7;
+            color:#333;
+        }
+
+        header{
+            background:pink;
+            padding:20px;
+            text-align:center;
+            color:white;
+        }
+
+        nav{
+            background:#f494c4;
+            padding:12px;
+            text-align:center;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+            font-weight:bold;
+        }
+
+        nav a:hover{
+            color: black;
+        }
+
+        section{
+            padding: 40px;
+        }
+
+        .beranda{
+            text-align:center;
+            background:#ffe4ec;
+            padding:70px 20px;
+        }
+
+        .beranda h2{
+            font-size:40px;
+            margin-bottom:15px;
+        }
+
+        .beranda p {
+            font-size: 18px;
+        }
+
+        .tentang{
+            background-color: white;
+        }
+
+        .produk-container{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .card{
+            background: white;
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            overflow: hidden;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        .card img{
+            width:100%;
+            height:250px;
+            object-fit:cover;
+        }
+
+        .card h3{
+            margin: 15 0 15px;
+        }
+
+        .card p{
+            padding: 0 10px;
+        }
+
+        .harga{
+            background: #f78ecd;
+        }
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+            margin-top:20px;
+            background:white;
+        }
+
+        table, th, td{
+            border:1px solid #ddd;
+        }
+
+        th{
+            background:rgb(255, 162, 225);
+            color:white;
+        }
+
+        th, td{
+            padding:15px;
+            text-align:center;
+        }
+
+        .form{
+            background:white;
+        }
+
+        form{
+            max-width:500px;
+            margin:auto;
+            background:#ffe4ec;
+            padding:25px;
+            border-radius:10px;
+        }
+
+        form input,
+        form textarea,
+        form select{
+            width:100%;
+            padding:12px;
+            margin:10px 0;
+            border:1px solid #ccc;
+            border-radius:5px;
+        }
+
+        form button{
+            background:#ff69b4;
+            color:white;
+            border:none;
+            padding:12px;
+            width:100%;
+            font-size:16px;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        form button:hover{
+            background:#ff1493;
+        }
+
+        footer{
+            background:#f390c2;
+            color:white;
+            text-align:center;
+            padding:15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nita Cosmetic</h1>
+    <p>Kosmetik Aman dan Berkualitas</p>
+
+    <nav>
+        <a href="#beranda">Beranda</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#produk">Produk</a>
+        <a href="#harga">Harga</a>
+        <a href="#form">Form Pemesanan</a>
+    </nav>
+
+    <section class="beranda" id="beranda">
+        <h2>Selamat Datang di Nita Cosmetic</h2>
+        <p>Kami menyediakan berbagai produk kosmetik berkualitas untuk membuat penampilan lebih cantik dan percaya diri.</p>
+    </section>
+
+    <section class="tentang" id="tentang">
+        <h2>Tentang Kami</h2>
+        <p>Nita Cosmetic adalah toko kosmetik yang menyediakan produk kecantikan seperti lipstick, skincare, bedak dan parfum dengan kualitas terbaik dan harga terjangkau. Produk kami aman digunakan dan cocok untuk remaja maupun dewasa.</p>
+    </section>
+
+    <section id="produk">
+        <h2 align="center">Produk Kami</h2>
+
+        <div class="produk-container">
+            <div class="card">
+                <img src="lipstik.jpg" alt="Lipstick">
+                <h3>Lipstick Matte</h3>
+                <p>Lipstick yang tahan lama dengan warna yang elegan.</p>
+            </div>
+
+            <div class="card">
+                <img src="niacinamide_brightening_serum_20ml-min.png" alt="Serum">
+                <h3>Brightening Serum</h3>
+                <p>Membantu menjaga kulit tetap sehat dan cerah.</p>
+            </div>
+
+            <div class="card">
+                <img src="parfum.jpg" alt="Parfum">
+                <h3>Parfum Wanita</h3>
+                <p>Parfum harum lembut dan harumnya tahan lama.</p>
+            </div>
+
+            <div class="card">
+                <img src="cushion.jpg" alt="Cushion">
+                <h3>Cushion Glowshopy</h3>
+                <p>Cocok untuk kulit berminyak (oily), kombinasi, dan berjerawat karena ampuh mengontrol minyak hingga 8 jam tanpa menyumbat pori-pori.</p>
+            </div>
+
+            <div class="card">
+                <img src="eyeshadow.png" alt="Eyeshadow">
+                <h3>Eyeshadow</h3>
+                <p>Eyeshadow dengan warna yang cantik untuk mempercantik mata.</p>
+            </div>
+
+            <div class="card">
+                <img src="blush on.jpg" alt="Blush On">
+                <h3>Blush On</h3>
+                <p>Blush on dengan warna yang cantik untuk membuat pipi menjadi cantik.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="harga" id="harga">
+        <h2 align="center">Daftar Harga</h2>
+        <table>
+            <tr>
+                <th>Produk</th>
+                <th>Harga</th>
+            </tr>
+
+            <tr>
+                <td>Lipstick Matte</td>
+                <td>Rp 80.000</td>
+            </tr>
+
+            <tr>
+                <td>Brightening Serum</td>
+                <td>Rp 120.000</td>
+            </tr>
+
+            <tr>
+                <td>Parfum Wanita</td>
+                <td>Rp 50.000</td>
+            </tr>
+
+            <tr>
+                <td>Cushion</td>
+                <td>Rp 80.000</td>
+            </tr>
+
+            <tr>
+                <td>Eyeshadow</td>
+                <td>Rp 150.000</td>
+            </tr>
+
+            <tr>
+                <td>Blush On</td>
+                <td>Rp 45.000</td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="form" id="form">
+        <h2 align="center">Form Pemesanan</h2>
+        <form>
+            <input type="text" placeholder="Nama Lengkap" required>
+            <input type="email" placeholder="Email" required>
+            <select required>
+                <option value="">Pilih Produk</option>
+                <option>Lipstick Matte</option>
+                <option>Brightening Serum</option>
+                <option>Parfum Wanita</option>
+                <option>Cushion</option>
+                <option>Eyeshadow</option>
+                <option>Blush On</option>
+            </select>
+            <button type="submit">Pesan Sekarang</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2026 Nita Cosmetic | Website Cosmetic</p>
+    </footer>
+</body>
+</html>
