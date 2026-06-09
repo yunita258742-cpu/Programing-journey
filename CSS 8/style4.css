@@ -1,0 +1,8 @@
+.hero{
+    width: 50vw;
+    height: 30vh;
+    background-color: lightgreen;
+    text-align: center;
+    line-height: 100vh;
+    font-size: 5vw;
+}
